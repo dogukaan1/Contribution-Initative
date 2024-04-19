@@ -1,5 +1,24 @@
 # contribution_initative1
 
+Project Name: Contribution Initiative
+
+About Us:
+
+Name: Ibrahim Doğan & Doğu Kaan Sakallı & Cem Kandemir
+
+Project Details: We are developing a donation system on the blockchain. This system will allow individuals and organizations to donate through a single platform. Individuals wishing to donate will be able to easily donate to the organizations they choose. State-approved organizations will also be able to collect donations through this system. One of the most important features of our system will be transparency. This way, donors will be able to track the amounts of their donations and receive feedback from the organizations they donate to. Additionally, entrepreneurs will be able to use this platform reliably when they want to raise donations for their projects. Our goal is to create a platform based on completely transparent and reliable communication.
+
+Development Plan:
+
+Design of Smart Contracts: We will design and develop smart contracts to manage donations, user profiles, and transparency features.
+Smart Contract Development: The smart contracts will be coded in a blockchain-compatible language (e.g., Solidity for Ethereum, or Rust for other blockchains) and deployed on the blockchain.
+User Interface Development: A user-friendly web-based interface will be developed to allow users to easily donate, track donations, and receive feedback.
+Integration of Interface and Smart Contracts: The user interface will be integrated with the smart contracts to enable seamless interaction between users and the blockchain.
+Beta Testing and Feedback: The platform will undergo thorough beta testing to ensure functionality and user experience meet expectations. Feedback will be collected and implemented.
+Deployment: After successful testing and feedback implementation, the platform will be deployed to the main blockchain network for public use.
+Vision: Our vision is to create a transparent and reliable donation platform that facilitates easy and secure donations for individuals, organizations, and entrepreneurs, ultimately contributing to positive social impact and community development.
+
+Personal Story Summary: As the founder of this project, I am passionate about creating positive change through technology. I believe that transparency and reliability are key values that should be upheld in all aspects of life, including donations and charitable activities. I am excited to lead this project and make a meaningful contribution to society.
 Welcome to your new contribution_initative1 project and to the internet computer development community. By default, creating a new project adds this README and some template files to your project directory. You can edit these template files to customize your project and to include your own code to speed up the development cycle.
 
 To get started, you might want to explore the project directory structure and the default configuration file. Working with this project in your development environment will not affect any production deployment or identity tokens.

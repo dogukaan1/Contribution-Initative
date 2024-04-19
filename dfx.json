@@ -10,7 +10,7 @@
         "contribution_initative1_backend"
       ],
       "frontend": {
-        "entrypoint": "src/contribution_initative1_frontend/src/index.html"
+        "build": "npm run build"
       },
       "source": [
         "src/contribution_initative1_frontend/assets",

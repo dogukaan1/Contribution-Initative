@@ -10,6 +10,12 @@ const isDevelopment = process.env.NODE_ENV !== "production";
 const frontendDirectory = "contribution_initative1_frontend";
 
 const frontend_entry = path.join("src", frontendDirectory, "src", "index.html");
+const organization_entry = path.join("src", frontendDirectory, "src", "organization.html");
+const login_entry = path.join("src", frontendDirectory, "src", "login.html");
+const profile_entry = path.join("src", frontendDirectory, "src", "profile.html");
+const register_entry = path.join("src", frontendDirectory, "src", "register.html");
+
+
 
 module.exports = {
   target: "web",
@@ -18,6 +24,11 @@ module.exports = {
     // The frontend.entrypoint points to the HTML file for this build, so we need
     // to replace the extension to `.js`.
     index: path.join(__dirname, frontend_entry).replace(/\.html$/, ".js"),
+    organization: path.join(__dirname, organization_entry).replace(/\.html$/, ".js"),
+    login: path.join(__dirname, login_entry).replace(/\.html$/, ".js"),
+    profile: path.join(__dirname, profile_entry).replace(/\.html$/, ".js"),
+    register: path.join(__dirname, register_entry).replace(/\.html$/, ".js"),
+
   },
   devtool: isDevelopment ? "source-map" : false,
   optimization: {
@@ -35,7 +46,7 @@ module.exports = {
     },
   },
   output: {
-    filename: "index.js",
+    filename: "[name].js",
     path: path.join(__dirname, "dist", frontendDirectory),
   },
 
@@ -51,9 +62,35 @@ module.exports = {
   //  ]
   // },
   plugins: [
+    // new HtmlWebpackPlugin({
+    //   template: path.join(__dirname, frontend_entry),
+    //   cache: false,
+    // }),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, frontend_entry),
+      filename: "index.html",
+      chunks: ["index"],
       cache: false,
+    }),
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, organization_entry),
+      filename:'organization.html',
+      chunks: ["organization"],
+    }),
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, login_entry),
+      filename:'login.html',
+      chunks: ["login"],
+    }),
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, profile_entry),
+      filename:'profile.html',
+      chunks: ["profile"],
+    }),
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, register_entry),
+      filename:'register.html',
+      chunks: ["register"],
     }),
     new webpack.EnvironmentPlugin([
       ...Object.keys(process.env).filter((key) => {
